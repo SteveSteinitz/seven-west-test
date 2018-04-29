@@ -14,20 +14,21 @@ const Content = styled.div`
   padding:6px 8px;
   color: white;
   text-align: left;
-}  
-`
-const Logo = styled.div`
-`;
+}`
+
+const imgStyle = {
+  maxHeight: "100%",
+  maxWidth: "100%"
+}
 
 function Banner (props) {
     return (
       <Content>
-        <Logo>
-          <img src={logo} className="App-logo" alt="logo" height="89px"/>
-        </Logo>
-         <h1>{props.title}</h1>
+        <img style={imgStyle} src={logo} className="App-logo" alt="logo"/>
+        <h1>{props.title}</h1>
      </Content>
     );
 }
 
 export default Banner;
+

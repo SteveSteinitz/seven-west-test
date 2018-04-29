@@ -4,6 +4,10 @@ import tile from './tile.jpg';
 import './App.css';
 import Banner from './Banner';
 
+// Need to know these dimensions since I now of no reasonable way to scale a div to an image size
+const tileHeight = '354px';
+const tileWidth = '630px';
+
 const AppWrapper = styled.div`
   background-color: black;
   display: grid;
@@ -17,10 +21,9 @@ const AppWrapper = styled.div`
 const Content = styled.div`
   background-image: url(${tile});
   background-repeat: no-repeat;
-  width: 620px;
-  height: 340px;
   position: relative;
-
+  height: ${tileHeight};
+  width: ${tileWidth};
 `;
 
 class App extends Component {
@@ -28,8 +31,7 @@ class App extends Component {
     return (
       <AppWrapper>
         <Content>
-          <Banner title={'Home and Away'}>
-          </Banner>
+          <Banner title={'Home and Away'} />
         </Content>
       </AppWrapper>
     );
