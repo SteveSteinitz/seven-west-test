@@ -4,7 +4,8 @@ import tile from './tile.jpg';
 import './App.css';
 import Banner from './Banner';
 
-// Need to know these dimensions since I now of no reasonable way to scale a div to an image size
+// Need to know these dimensions since I want the image to be actual size but
+// know of no reasonable way to scale a div to an image size
 const tileHeight = '354px';
 const tileWidth = '630px';
 
