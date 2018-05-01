@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import tile from './tile.jpg';
-import './App.css';
 import Banner from './Banner';
 
 // Need to know these dimensions since I want the image to be actual size but
